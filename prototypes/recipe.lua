@@ -1,6 +1,8 @@
 
 data:extend({
-	-- --------------------
+	-- ----------------------------
+	-- 水素と一酸化炭素の抽出
+	-- ----------------------------
 	{
 		type = "recipe",
 		name = "coal-gasification",
@@ -21,6 +23,9 @@ data:extend({
 		order = "s[suumani]-v[valentine]-c[coal-gasification]",
 	}
 	,
+	-- ----------------------------
+	-- 水酸化カルシウム（Calcium Hydroxide）
+	-- ----------------------------
 	{
 		type = "recipe",
 		name = "calcium_hydroxide",
@@ -40,6 +45,9 @@ data:extend({
 		order = "s[suumani]-v[valentine]-c[calcium_hydroxide]",
 	}
 	,
+	-- ----------------------------
+	-- 人工加工糖（Synthetic Sugar Production）
+	-- ----------------------------
 	{
 		type = "recipe",
 		name = "synthetic_sugar_production",
@@ -59,6 +67,9 @@ data:extend({
 		order = "s[suumani]-v[valentine]-c[synthetic_sugar_production]",
 	}
 	,
+	-- ----------------------------
+	-- ナッツ（Sugar Nats）
+	-- ----------------------------
 	{
 		type = "recipe",
 		name = "sugar_nats",
@@ -77,6 +88,9 @@ data:extend({
 		order = "s[suumani]-v[valentine]-s[sugar_nats]",
 	}
 	,
+	-- ----------------------------
+	-- バニラエッセンス（Vanilla Essence）
+	-- ----------------------------
 	{
 		type = "recipe",
 		name = "vanilla_essence",
@@ -392,7 +406,7 @@ data:extend({
 	-- ----------------------------
 	{
 		type = "recipe",
-		name = "speed_chocolate",
+		name = "worm_tamer_chocolate",
 		category = "crafting-with-fluid",
 		enabled = true,
 		energy_required = 12,
@@ -404,11 +418,11 @@ data:extend({
 			{type = "fluid", name = "steam", amount = 10},
 		},
 		results = {
-			{ type = "item", name = "speed_chocolate", amount = 1 },
+			{ type = "item", name = "worm_tamer_chocolate", amount = 1 },
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-v[speed_chocolate]",
+		order = "s[suumani]-v[valentine]-v[worm_tamer_chocolate]",
 	}
 	,
 	-- ----------------------------
