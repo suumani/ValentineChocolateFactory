@@ -1,0 +1,15 @@
+{
+    "name": "ValentineChocolateFactory",
+    "version": "0.0.3",
+    "factorio_version": "2.0",
+    "title": "Chocolate for Biters!",
+    "author": "suumani",
+    "description": "(en)Give chocolate to the Biters! The factory manager can enjoy it too. (You can make chocolate, but the item effects are not working yet!) \n(jp)バイターにチョコレートを！工場長も食べられます。チョコレートは作れるけど、アイテムの効果はまだ出ないよ！",
+    "thumbnail": "thumbnail.png",
+    "dependencies": [
+    "base >= 2.0.0",
+    "elevated-rails >= 2.0.0",
+    "quality >= 2.0.0",
+    "space-age >= 2.0.0"
+    ]
+}
