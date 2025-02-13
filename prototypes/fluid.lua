@@ -13,7 +13,7 @@ data:extend({
 		base_color = {r=0.1, g=0.6, b=1.0}, 
 		flow_color = {r=0.3, g=0.8, b=1.0}, 
 		icon = "__ValentineChocolateFactory__/graphics/icons/hydrogen.png",
-		order = "a[fluid]-z[hydrogen]-z[hydrogen]"
+		order = "s[suumani]-v[valentine]-1010[hydrogen]"
 	}
 	,
 	-- ----------------------------
@@ -29,7 +29,7 @@ data:extend({
 		base_color = {r=0.3, g=0.3, b=0.3},
 		flow_color = {r=0.8, g=0.8, b=0.8},
 		icon = "__ValentineChocolateFactory__/graphics/icons/carbon_monoxide.png",
-		order = "a[fluid]-z[carbon_monoxide]-z[carbon_monoxide]"
+		order = "s[suumani]-v[valentine]-1020[carbon_monoxide]"
 	}
 	,
 	-- ----------------------------
@@ -45,7 +45,7 @@ data:extend({
 		base_color = {r=0.3, g=0.3, b=0.3},
 		flow_color = {r=0.8, g=0.8, b=0.8},
 		icon = "__ValentineChocolateFactory__/graphics/icons/vanilla_essence.png",
-		order = "a[fluid]-z[vanilla_essence]-z[vanilla_essence]"
+		order = "s[suumani]-v[valentine]-1060[vanilla_essence]"
 	}
 	,
 })

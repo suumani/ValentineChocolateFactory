@@ -1,3 +1,7 @@
+local sounds = require("__base__.prototypes.entity.sounds")
+local item_sounds = require("__base__.prototypes.item_sounds")
+local item_tints = require("__base__.prototypes.item-tints")
+local simulations = require("__base__.prototypes.factoriopedia-simulations")
 
 data:extend({
 	-- ----------------------------
@@ -11,7 +15,7 @@ data:extend({
 	  fuel_value = "2MJ",
 	  fuel_category = "chemical",
 	  subgroup = "raw-resource",
-	  order = "s[suumani]-v[valentine]-c[calcium_hydroxide]",
+	  order = "s[suumani]-v[valentine]-1030[calcium_hydroxide]",
 	  stack_size = 100,
 	  weight = 100
 	}
@@ -27,7 +31,7 @@ data:extend({
 	  fuel_value = "2MJ",
 	  fuel_category = "chemical",
 	  subgroup = "raw-resource",
-	  order = "s[suumani]-v[valentine]-s[synthetic_sugar_production]",
+	  order = "s[suumani]-v[valentine]-1040[synthetic_sugar_production]",
 	  stack_size = 100,
 	  weight = 100
 	}
@@ -43,7 +47,7 @@ data:extend({
 	  fuel_value = "2MJ",
 	  fuel_category = "chemical",
 	  subgroup = "raw-resource",
-	  order = "s[suumani]-v[valentine]-s[sugar_nats]",
+	  order = "s[suumani]-v[valentine]-1050[sugar_nats]",
 	  stack_size = 100,
 	  weight = 100
 	}
@@ -56,10 +60,10 @@ data:extend({
 		name = "milk_chocolate", -- ミルクチョコレート (Milk Chocolate)
 		localised_name = {"item-name.milk_chocolate"},
 		localised_description = {"item-description.milk_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/milk_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1110_milk_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-milk_chocolate]",
+		order = "s[suumani]-v[valentine]-1110[milk_chocolate]",
 		stack_size = 100,
 		weight = 1000,
 		capsule_action = {
@@ -93,10 +97,10 @@ data:extend({
 		name = "dark_chocolate", -- ダークチョコレート (Dark Chocolate)
 		localised_name = {"item-name.dark_chocolate"},
 		localised_description = {"item-description.dark_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/dark_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1120_dark_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-dark_chocolate]",
+		order = "s[suumani]-v[valentine]-1120[dark_chocolate]",
 		stack_size = 100,
 		weight = 1000,
 		capsule_action = {
@@ -130,10 +134,10 @@ data:extend({
 		name = "white_chocolate", -- ホワイトチョコレート (White Chocolate)
 		localised_name = {"item-name.white_chocolate"},
 		localised_description = {"item-description.white_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/white_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1130_white_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-white_chocolate]",
+		order = "s[suumani]-v[valentine]-1130[white_chocolate]",
 		stack_size = 100,
 		weight = 1000,
 		capsule_action = {
@@ -167,10 +171,10 @@ data:extend({
 		name = "caramel_chocolate", -- キャラメルチョコレート (Caramel Chocolate)
 		localised_name = {"item-name.caramel_chocolate"},
 		localised_description = {"item-description.caramel_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/caramel_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1140_caramel_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-caramel_chocolate]",
+		order = "s[suumani]-v[valentine]-1140[caramel_chocolate]",
 		stack_size = 100,
 		weight = 1000,
 		capsule_action = {
@@ -204,10 +208,10 @@ data:extend({
 		name = "nut_chocolate", -- ナッツチョコレート (Nut Chocolate)
 		localised_name = {"item-name.nut_chocolate"},
 		localised_description = {"item-description.nut_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/nut_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1150_nut_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-nut_chocolate]",
+		order = "s[suumani]-v[valentine]-1150[nut_chocolate]",
 		stack_size = 100,
 		weight = 1000,
 		capsule_action = {
@@ -241,10 +245,10 @@ data:extend({
 		name = "speed_chocolate", -- スピードチョコレート（Speed Chocolate）
 		localised_name = {"item-name.speed_chocolate"},
 		localised_description = {"item-description.speed_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/speed_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1160_speed_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-speed_chocolate]",
+		order = "s[suumani]-v[valentine]-1160[speed_chocolate]",
 		stack_size = 100,
 		weight = 1000,
 		capsule_action = {
@@ -278,10 +282,10 @@ data:extend({
 		name = "night_vision_chocolate", -- 暗視チョコ（Night Vision Chocolate）
 		localised_name = {"item-name.night_vision_chocolate"},
 		localised_description = {"item-description.night_vision_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/night_vision_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1170_night_vision_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-night_vision_chocolate]",
+		order = "s[suumani]-v[valentine]-1170[night_vision_chocolate]",
 		stack_size = 100,
 		weight = 1000,
 		capsule_action = {
@@ -315,10 +319,10 @@ data:extend({
 		name = "yumako_chocolate",
 		localised_name = {"item-name.yumako_chocolate"},
 		localised_description = {"item-description.yumako_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/yumako_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1180_yumako_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-yumako_chocolate]",
+		order = "s[suumani]-v[valentine]-1180[yumako_chocolate]",
 		stack_size = 100,
 		weight = 1000,
 		capsule_action = {
@@ -352,10 +356,10 @@ data:extend({
 		name = "jelly_chocolate",
 		localised_name = {"item-name.jelly_chocolate"},
 		localised_description = {"item-description.jelly_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/jelly_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1190_jelly_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-jelly_chocolate]",
+		order = "s[suumani]-v[valentine]-1190[jelly_chocolate]",
 		stack_size = 100,
 		weight = 1000,
 		capsule_action = {
@@ -389,10 +393,10 @@ data:extend({
 		name = "heigh_energy_chocolate",
 		localised_name = {"item-name.heigh_energy_chocolate"},
 		localised_description = {"item-description.heigh_energy_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/heigh_energy_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1200_heigh_energy_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-heigh_energy_chocolate]",
+		order = "s[suumani]-v[valentine]-1200[heigh_energy_chocolate]",
 		stack_size = 100,
 		weight = 1000,
 		capsule_action = {
@@ -426,10 +430,10 @@ data:extend({
 		name = "ore_chocolate",
 		localised_name = {"item-name.ore_chocolate"},
 		localised_description = {"item-description.ore_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/ore_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1210_ore_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-ore_chocolate]",
+		order = "s[suumani]-v[valentine]-1210[ore_chocolate]",
 		stack_size = 100,
 		weight = 1000,
 		capsule_action = {
@@ -463,31 +467,54 @@ data:extend({
 		name = "biter_tamer_chocolate", 
 		localised_name = {"item-name.biter_tamer_chocolate"},
 		localised_description = {"item-description.biter_tamer_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/biter_tamer_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1220_biter_tamer_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-biter_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1220[biter_tamer_chocolate]",
 		stack_size = 100,
 		weight = 1000,
+
 		capsule_action = {
 			type = "throw",
 			attack_parameters = {
 				type = "projectile",
+				activation_type = "throw",
 				ammo_category = "capsule",
 				cooldown = 30, -- クールダウンタイム
 				range = 15, -- 投擲可能距離
 				ammo_type = {
-					category = "capsule",
 					target_type = "position",
-					action = {
+					action =
+					{
+					  {
+						type = "direct",
+						action_delivery =
 						{
-							type = "direct",
-							action_delivery = {
-								type = "instant"
-							}
+						  type = "projectile",
+						  projectile = "chocolate-projectile",
+						  starting_speed = 0.3
 						}
+					  },
+					  {
+						type = "direct",
+						action_delivery =
+						{
+						  type = "instant",
+						  target_effects =
+						  {
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_projectile
+							},
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_grenade
+							},
+						  }
+						}
+					  }
 					}
-				}
+				  }
 			}
 		}
 	}
@@ -500,31 +527,54 @@ data:extend({
 		name = "spitter_tamer_chocolate", 
 		localised_name = {"item-name.spitter_tamer_chocolate"},
 		localised_description = {"item-description.spitter_tamer_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/spitter_tamer_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1230_spitter_tamer_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-spitter_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1230[spitter_tamer_chocolate]",
 		stack_size = 100,
 		weight = 1000,
+
 		capsule_action = {
 			type = "throw",
 			attack_parameters = {
 				type = "projectile",
+				activation_type = "throw",
 				ammo_category = "capsule",
 				cooldown = 30, -- クールダウンタイム
 				range = 15, -- 投擲可能距離
 				ammo_type = {
-					category = "capsule",
 					target_type = "position",
-					action = {
+					action =
+					{
+					  {
+						type = "direct",
+						action_delivery =
 						{
-							type = "direct",
-							action_delivery = {
-								type = "instant"
-							}
+						  type = "projectile",
+						  projectile = "chocolate-projectile",
+						  starting_speed = 0.3
 						}
+					  },
+					  {
+						type = "direct",
+						action_delivery =
+						{
+						  type = "instant",
+						  target_effects =
+						  {
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_projectile
+							},
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_grenade
+							},
+						  }
+						}
+					  }
 					}
-				}
+				  }
 			}
 		}
 	}
@@ -537,31 +587,54 @@ data:extend({
 		name = "worm_tamer_chocolate", 
 		localised_name = {"item-name.worm_tamer_chocolate"},
 		localised_description = {"item-description.worm_tamer_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/worm_tamer_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1240_worm_tamer_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-worm_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1240[worm_tamer_chocolate]",
 		stack_size = 100,
 		weight = 1000,
+
 		capsule_action = {
 			type = "throw",
 			attack_parameters = {
 				type = "projectile",
+				activation_type = "throw",
 				ammo_category = "capsule",
 				cooldown = 30, -- クールダウンタイム
 				range = 15, -- 投擲可能距離
 				ammo_type = {
-					category = "capsule",
 					target_type = "position",
-					action = {
+					action =
+					{
+					  {
+						type = "direct",
+						action_delivery =
 						{
-							type = "direct",
-							action_delivery = {
-								type = "instant"
-							}
+						  type = "projectile",
+						  projectile = "chocolate-projectile",
+						  starting_speed = 0.3
 						}
+					  },
+					  {
+						type = "direct",
+						action_delivery =
+						{
+						  type = "instant",
+						  target_effects =
+						  {
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_projectile
+							},
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_grenade
+							},
+						  }
+						}
+					  }
 					}
-				}
+				  }
 			}
 		}
 	}
@@ -574,31 +647,54 @@ data:extend({
 		name = "wriggler_tamer_chocolate", 
 		localised_name = {"item-name.wriggler_tamer_chocolate"},
 		localised_description = {"item-description.wriggler_tamer_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/wriggler_tamer_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1250_wriggler_tamer_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-wriggler_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1250[wriggler_tamer_chocolate]",
 		stack_size = 100,
 		weight = 1000,
+
 		capsule_action = {
 			type = "throw",
 			attack_parameters = {
 				type = "projectile",
+				activation_type = "throw",
 				ammo_category = "capsule",
 				cooldown = 30, -- クールダウンタイム
 				range = 15, -- 投擲可能距離
 				ammo_type = {
-					category = "capsule",
 					target_type = "position",
-					action = {
+					action =
+					{
+					  {
+						type = "direct",
+						action_delivery =
 						{
-							type = "direct",
-							action_delivery = {
-								type = "instant"
-							}
+						  type = "projectile",
+						  projectile = "chocolate-projectile",
+						  starting_speed = 0.3
 						}
+					  },
+					  {
+						type = "direct",
+						action_delivery =
+						{
+						  type = "instant",
+						  target_effects =
+						  {
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_projectile
+							},
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_grenade
+							},
+						  }
+						}
+					  }
 					}
-				}
+				  }
 			}
 		}
 	}
@@ -611,31 +707,54 @@ data:extend({
 		name = "storafer_tamer_chocolate", 
 		localised_name = {"item-name.storafer_tamer_chocolate"},
 		localised_description = {"item-description.storafer_tamer_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/storafer_tamer_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1260_storafer_tamer_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-storafer_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1260[storafer_tamer_chocolate]",
 		stack_size = 100,
 		weight = 1000,
+
 		capsule_action = {
 			type = "throw",
 			attack_parameters = {
 				type = "projectile",
+				activation_type = "throw",
 				ammo_category = "capsule",
 				cooldown = 30, -- クールダウンタイム
 				range = 15, -- 投擲可能距離
 				ammo_type = {
-					category = "capsule",
 					target_type = "position",
-					action = {
+					action =
+					{
+					  {
+						type = "direct",
+						action_delivery =
 						{
-							type = "direct",
-							action_delivery = {
-								type = "instant"
-							}
+						  type = "projectile",
+						  projectile = "chocolate-projectile",
+						  starting_speed = 0.3
 						}
+					  },
+					  {
+						type = "direct",
+						action_delivery =
+						{
+						  type = "instant",
+						  target_effects =
+						  {
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_projectile
+							},
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_grenade
+							},
+						  }
+						}
+					  }
 					}
-				}
+				  }
 			}
 		}
 	}
@@ -648,31 +767,54 @@ data:extend({
 		name = "stomper_tamer_chocolate", 
 		localised_name = {"item-name.stomper_tamer_chocolate"},
 		localised_description = {"item-description.stomper_tamer_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/stomper_tamer_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1270_stomper_tamer_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-stomper_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1270[stomper_tamer_chocolate]",
 		stack_size = 100,
 		weight = 1000,
+
 		capsule_action = {
 			type = "throw",
 			attack_parameters = {
 				type = "projectile",
+				activation_type = "throw",
 				ammo_category = "capsule",
 				cooldown = 30, -- クールダウンタイム
 				range = 15, -- 投擲可能距離
 				ammo_type = {
-					category = "capsule",
 					target_type = "position",
-					action = {
+					action =
+					{
+					  {
+						type = "direct",
+						action_delivery =
 						{
-							type = "direct",
-							action_delivery = {
-								type = "instant"
-							}
+						  type = "projectile",
+						  projectile = "chocolate-projectile",
+						  starting_speed = 0.3
 						}
+					  },
+					  {
+						type = "direct",
+						action_delivery =
+						{
+						  type = "instant",
+						  target_effects =
+						  {
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_projectile
+							},
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_grenade
+							},
+						  }
+						}
+					  }
 					}
-				}
+				  }
 			}
 		}
 	}
@@ -685,31 +827,54 @@ data:extend({
 		name = "demolisher_tamer_chocolate", 
 		localised_name = {"item-name.demolisher_tamer_chocolate"},
 		localised_description = {"item-description.demolisher_tamer_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/demolisher_tamer_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1280_demolisher_tamer_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-demolisher_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1280[demolisher_tamer_chocolate]",
 		stack_size = 100,
 		weight = 1000,
+
 		capsule_action = {
 			type = "throw",
 			attack_parameters = {
 				type = "projectile",
+				activation_type = "throw",
 				ammo_category = "capsule",
 				cooldown = 30, -- クールダウンタイム
 				range = 15, -- 投擲可能距離
 				ammo_type = {
-					category = "capsule",
 					target_type = "position",
-					action = {
+					action =
+					{
+					  {
+						type = "direct",
+						action_delivery =
 						{
-							type = "direct",
-							action_delivery = {
-								type = "instant"
-							}
+						  type = "projectile",
+						  projectile = "chocolate-projectile",
+						  starting_speed = 0.3
 						}
+					  },
+					  {
+						type = "direct",
+						action_delivery =
+						{
+						  type = "instant",
+						  target_effects =
+						  {
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_projectile
+							},
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_grenade
+							},
+						  }
+						}
+					  }
 					}
-				}
+				  }
 			}
 		}
 	}
@@ -722,31 +887,54 @@ data:extend({
 		name = "high_quality_biter_tamer_chocolate", 
 		localised_name = {"item-name.high_quality_biter_tamer_chocolate"},
 		localised_description = {"item-description.high_quality_biter_tamer_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/high_quality_biter_tamer_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1290_high_quality_biter_tamer_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-high_quality_biter_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1290[high_quality_biter_tamer_chocolate]",
 		stack_size = 100,
 		weight = 1000,
+
 		capsule_action = {
 			type = "throw",
 			attack_parameters = {
 				type = "projectile",
+				activation_type = "throw",
 				ammo_category = "capsule",
 				cooldown = 30, -- クールダウンタイム
 				range = 15, -- 投擲可能距離
 				ammo_type = {
-					category = "capsule",
 					target_type = "position",
-					action = {
+					action =
+					{
+					  {
+						type = "direct",
+						action_delivery =
 						{
-							type = "direct",
-							action_delivery = {
-								type = "instant"
-							}
+						  type = "projectile",
+						  projectile = "chocolate-projectile",
+						  starting_speed = 0.3
 						}
+					  },
+					  {
+						type = "direct",
+						action_delivery =
+						{
+						  type = "instant",
+						  target_effects =
+						  {
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_projectile
+							},
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_grenade
+							},
+						  }
+						}
+					  }
 					}
-				}
+				  }
 			}
 		}
 	}
@@ -759,31 +947,54 @@ data:extend({
 		name = "high_quality_spitter_tamer_chocolate", 
 		localised_name = {"item-name.high_quality_spitter_tamer_chocolate"},
 		localised_description = {"item-description.high_quality_spitter_tamer_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/high_quality_spitter_tamer_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1300_high_quality_spitter_tamer_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-high_quality_spitter_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1300[high_quality_spitter_tamer_chocolate]",
 		stack_size = 100,
 		weight = 1000,
+
 		capsule_action = {
 			type = "throw",
 			attack_parameters = {
 				type = "projectile",
+				activation_type = "throw",
 				ammo_category = "capsule",
 				cooldown = 30, -- クールダウンタイム
 				range = 15, -- 投擲可能距離
 				ammo_type = {
-					category = "capsule",
 					target_type = "position",
-					action = {
+					action =
+					{
+					  {
+						type = "direct",
+						action_delivery =
 						{
-							type = "direct",
-							action_delivery = {
-								type = "instant"
-							}
+						  type = "projectile",
+						  projectile = "chocolate-projectile",
+						  starting_speed = 0.3
 						}
+					  },
+					  {
+						type = "direct",
+						action_delivery =
+						{
+						  type = "instant",
+						  target_effects =
+						  {
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_projectile
+							},
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_grenade
+							},
+						  }
+						}
+					  }
 					}
-				}
+				  }
 			}
 		}
 	}
@@ -796,31 +1007,54 @@ data:extend({
 		name = "high_quality_worm_tamer_chocolate", 
 		localised_name = {"item-name.high_quality_worm_tamer_chocolate"},
 		localised_description = {"item-description.high_quality_worm_tamer_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/high_quality_worm_tamer_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1310_high_quality_worm_tamer_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-high_quality_worm_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1310[high_quality_worm_tamer_chocolate]",
 		stack_size = 100,
 		weight = 1000,
+
 		capsule_action = {
 			type = "throw",
 			attack_parameters = {
 				type = "projectile",
+				activation_type = "throw",
 				ammo_category = "capsule",
 				cooldown = 30, -- クールダウンタイム
 				range = 15, -- 投擲可能距離
 				ammo_type = {
-					category = "capsule",
 					target_type = "position",
-					action = {
+					action =
+					{
+					  {
+						type = "direct",
+						action_delivery =
 						{
-							type = "direct",
-							action_delivery = {
-								type = "instant"
-							}
+						  type = "projectile",
+						  projectile = "chocolate-projectile",
+						  starting_speed = 0.3
 						}
+					  },
+					  {
+						type = "direct",
+						action_delivery =
+						{
+						  type = "instant",
+						  target_effects =
+						  {
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_projectile
+							},
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_grenade
+							},
+						  }
+						}
+					  }
 					}
-				}
+				  }
 			}
 		}
 	}
@@ -833,31 +1067,54 @@ data:extend({
 		name = "high_quality_wriggler_tamer_chocolate", 
 		localised_name = {"item-name.high_quality_wriggler_tamer_chocolate"},
 		localised_description = {"item-description.high_quality_wriggler_tamer_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/high_quality_wriggler_tamer_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1320_high_quality_wriggler_tamer_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-high_quality_wriggler_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1320[high_quality_wriggler_tamer_chocolate]",
 		stack_size = 100,
 		weight = 1000,
+
 		capsule_action = {
 			type = "throw",
 			attack_parameters = {
 				type = "projectile",
+				activation_type = "throw",
 				ammo_category = "capsule",
 				cooldown = 30, -- クールダウンタイム
 				range = 15, -- 投擲可能距離
 				ammo_type = {
-					category = "capsule",
 					target_type = "position",
-					action = {
+					action =
+					{
+					  {
+						type = "direct",
+						action_delivery =
 						{
-							type = "direct",
-							action_delivery = {
-								type = "instant"
-							}
+						  type = "projectile",
+						  projectile = "chocolate-projectile",
+						  starting_speed = 0.3
 						}
+					  },
+					  {
+						type = "direct",
+						action_delivery =
+						{
+						  type = "instant",
+						  target_effects =
+						  {
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_projectile
+							},
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_grenade
+							},
+						  }
+						}
+					  }
 					}
-				}
+				  }
 			}
 		}
 	}
@@ -870,31 +1127,54 @@ data:extend({
 		name = "high_quality_storafer_tamer_chocolate", 
 		localised_name = {"item-name.high_quality_storafer_tamer_chocolate"},
 		localised_description = {"item-description.high_quality_storafer_tamer_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/high_quality_storafer_tamer_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1330_high_quality_storafer_tamer_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-high_quality_storafer_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1330[high_quality_storafer_tamer_chocolate]",
 		stack_size = 100,
 		weight = 1000,
+
 		capsule_action = {
 			type = "throw",
 			attack_parameters = {
 				type = "projectile",
+				activation_type = "throw",
 				ammo_category = "capsule",
 				cooldown = 30, -- クールダウンタイム
 				range = 15, -- 投擲可能距離
 				ammo_type = {
-					category = "capsule",
 					target_type = "position",
-					action = {
+					action =
+					{
+					  {
+						type = "direct",
+						action_delivery =
 						{
-							type = "direct",
-							action_delivery = {
-								type = "instant"
-							}
+						  type = "projectile",
+						  projectile = "chocolate-projectile",
+						  starting_speed = 0.3
 						}
+					  },
+					  {
+						type = "direct",
+						action_delivery =
+						{
+						  type = "instant",
+						  target_effects =
+						  {
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_projectile
+							},
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_grenade
+							},
+						  }
+						}
+					  }
 					}
-				}
+				  }
 			}
 		}
 	}
@@ -907,31 +1187,54 @@ data:extend({
 		name = "high_quality_stomper_tamer_chocolate", 
 		localised_name = {"item-name.high_quality_stomper_tamer_chocolate"},
 		localised_description = {"item-description.high_quality_stomper_tamer_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/high_quality_stomper_tamer_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1340_high_quality_stomper_tamer_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-high_quality_stomper_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1340[high_quality_stomper_tamer_chocolate]",
 		stack_size = 100,
 		weight = 1000,
+
 		capsule_action = {
 			type = "throw",
 			attack_parameters = {
 				type = "projectile",
+				activation_type = "throw",
 				ammo_category = "capsule",
 				cooldown = 30, -- クールダウンタイム
 				range = 15, -- 投擲可能距離
 				ammo_type = {
-					category = "capsule",
 					target_type = "position",
-					action = {
+					action =
+					{
+					  {
+						type = "direct",
+						action_delivery =
 						{
-							type = "direct",
-							action_delivery = {
-								type = "instant"
-							}
+						  type = "projectile",
+						  projectile = "chocolate-projectile",
+						  starting_speed = 0.3
 						}
+					  },
+					  {
+						type = "direct",
+						action_delivery =
+						{
+						  type = "instant",
+						  target_effects =
+						  {
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_projectile
+							},
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_grenade
+							},
+						  }
+						}
+					  }
 					}
-				}
+				  }
 			}
 		}
 	}
@@ -944,31 +1247,54 @@ data:extend({
 		name = "high_quality_demolisher_tamer_chocolate", 
 		localised_name = {"item-name.high_quality_demolisher_tamer_chocolate"},
 		localised_description = {"item-description.high_quality_demolisher_tamer_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/high_quality_demolisher_tamer_chocolate.png",
+		icon = "__ValentineChocolateFactory__/graphics/icons/1350_high_quality_demolisher_tamer_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "m[machine]-a[_001-high_quality_demolisher_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1350[high_quality_demolisher_tamer_chocolate]",
 		stack_size = 100,
 		weight = 1000,
+
 		capsule_action = {
 			type = "throw",
 			attack_parameters = {
 				type = "projectile",
+				activation_type = "throw",
 				ammo_category = "capsule",
 				cooldown = 30, -- クールダウンタイム
 				range = 15, -- 投擲可能距離
 				ammo_type = {
-					category = "capsule",
 					target_type = "position",
-					action = {
+					action =
+					{
+					  {
+						type = "direct",
+						action_delivery =
 						{
-							type = "direct",
-							action_delivery = {
-								type = "instant"
-							}
+						  type = "projectile",
+						  projectile = "chocolate-projectile",
+						  starting_speed = 0.3
 						}
+					  },
+					  {
+						type = "direct",
+						action_delivery =
+						{
+						  type = "instant",
+						  target_effects =
+						  {
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_projectile
+							},
+							{
+							  type = "play-sound",
+							  sound = sounds.throw_grenade
+							},
+						  }
+						}
+					  }
 					}
-				}
+				  }
 			}
 		}
 	}
