@@ -491,7 +491,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "chocolate-projectile",
+						  projectile = "biter_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -551,7 +551,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "chocolate-projectile",
+						  projectile = "spitter_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -611,7 +611,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "chocolate-projectile",
+						  projectile = "worm_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -671,7 +671,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "chocolate-projectile",
+						  projectile = "biter_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -731,7 +731,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "chocolate-projectile",
+						  projectile = "biter_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -791,7 +791,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "chocolate-projectile",
+						  projectile = "biter_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -851,7 +851,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "chocolate-projectile",
+						  projectile = "biter_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -911,7 +911,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "chocolate-projectile",
+						  projectile = "high_quality_biter_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -971,7 +971,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "chocolate-projectile",
+						  projectile = "high_quality_spitter_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -1031,7 +1031,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "chocolate-projectile",
+						  projectile = "high_quality_worm_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -1091,7 +1091,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "chocolate-projectile",
+						  projectile = "biter_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -1151,7 +1151,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "chocolate-projectile",
+						  projectile = "biter_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -1211,7 +1211,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "chocolate-projectile",
+						  projectile = "biter_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -1271,7 +1271,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "chocolate-projectile",
+						  projectile = "biter_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
