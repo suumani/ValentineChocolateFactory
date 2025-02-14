@@ -28,19 +28,6 @@ data:extend({
           target_effects =
           {
             {
-              type = "create-entity",
-              entity_name = "grenade-explosion"
-            },
-            {
-              type = "create-entity",
-              entity_name = "small-scorchmark-tintable",
-              check_buildability = true
-            },
-            {
-              type = "invoke-tile-trigger",
-              repeat_count = 1
-            },
-            {
                 type = "script",
                 effect_id = "biter_tamer_chocolate_trigger"
             }
@@ -57,11 +44,7 @@ data:extend({
           {
             {
               type = "damage",
-              damage = {amount = 3, type = "explosion"}
-            },
-            {
-              type = "create-entity",
-              entity_name = "explosion"
+              damage = {amount = 3, type = "physical"}
             }
           }
         }
