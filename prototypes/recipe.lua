@@ -15,8 +15,8 @@ data:extend({
 		},
 		icon = "__ValentineChocolateFactory__/graphics/icons/hydrogen.png",
 		results = {
-			{ type = "fluid", name = "carbon_monoxide", amount = 2 },
-			{ type = "fluid", name = "hydrogen", amount = 2 }
+			{ type = "fluid", name = "carbon_monoxide", amount = 20 },
+			{ type = "fluid", name = "hydrogen", amount = 20 }
 		},
 		energy_required = 5,
 		allow_productivity = true,
@@ -35,10 +35,10 @@ data:extend({
 		ingredients = {
 			{type = "item", name = "coal", amount = 5 },
 			{type = "fluid", name = "water", amount = 2 },
-			{type = "fluid", name = "sulfuric-acid", amount = 2},
+			{type = "fluid", name = "sulfuric-acid", amount = 20},
 		},
 		results = {
-			{ type = "item", name = "calcium_hydroxide", amount = 2 },
+			{ type = "item", name = "calcium_hydroxide", amount = 20 },
 		},
 		energy_required = 5,
 		allow_productivity = true,
@@ -57,7 +57,6 @@ data:extend({
 		ingredients = {
 			{type = "fluid", name = "carbon_monoxide", amount = 10 },
 			{type = "item", name = "calcium_hydroxide", amount = 12 },
-			{type = "item", name = "synthetic_sugar_production", amount = 1},
 		},
 		results = {
 			{ type = "item", name = "synthetic_sugar_production", amount = 20 },
