@@ -21,4 +21,7 @@ script.on_nth_tick(600, function()
         end
     end
 
+	-- 被弾処理リストのリフレッシュ
+	storage.projectile_hits = {}
+
 end)

@@ -7,6 +7,7 @@
 -- ・すべてのMobをチョコレートで手なずけることができます。
 -- ----------------------------
 
+require("scripts.events.on_script_trigger_effect")
 require("scripts.events.on_player_used_capsule")
 require("scripts.events.on_nth_tick_10sec")
 require("scripts.events.on_entity_damaged")
