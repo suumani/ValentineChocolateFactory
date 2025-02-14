@@ -7,44 +7,171 @@ local function length(pos1, pos2)
     return math.sqrt((pos1.x - pos2.x)^2 + (pos1.y - pos2.y)^2)
 end
 
+local function is_tamer_success(damaged_entity)
+
+    local result = false
+
+    for key, value in pairs(storage.projectile_hits) do 
+        if game.tick - storage.projectile_hits[key][1] < 600 and length(storage.projectile_hits[key][2], damaged_entity.position) < 15 then
+            if damaged_entity.name == "small-biter" then
+                if key == "biter_tame_chocolate_trigger" or key == "high_quality_biter_tame_chocolate_trigger" then
+                    result = true
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "medium-biter" then
+                if key == "high_quality_biter_tame_chocolate_trigger" then
+                    result = true
+                elseif key == "biter_tame_chocolate_trigger" then
+                    if math.random() < 0.1 then
+                        result = true 
+                    else
+                        game.print({"item-description.biter-tame-chocolate-want-eat-more"})
+                    end
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "big-biter" then
+                if key == "high_quality_biter_tame_chocolate_trigger" then
+                    result = true
+                elseif key == "biter_tame_chocolate_trigger" then
+                    if math.random() < 0.03 then
+                        result = true 
+                    else
+                        game.print({"item-description.biter-tame-chocolate-want-eat-more"})
+                    end
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "behemoth-biter" then
+                if key == "high_quality_biter_tame_chocolate_trigger" then
+                    if math.random() < 0.1 then
+                        result = true 
+                    else
+                        game.print({"item-description.biter-tame-chocolate-want-eat-more"})
+                    end
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "small-spitter" then
+                if key == "spitter_tame_chocolate_trigger" or key == "high_quality_spitter_tame_chocolate_trigger" then
+                    result = true
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "medium-spitter" then
+                if key == "high_quality_spitter_tame_chocolate_trigger" then
+                    result = true
+                elseif key == "spitter_tame_chocolate_trigger" then
+                    if math.random() < 0.1 then
+                        result = true 
+                    else
+                        game.print({"item-description.biter-tame-chocolate-want-eat-more"})
+                    end
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "big-spitter" then
+                if key == "high_quality_spitter_tame_chocolate_trigger" then
+                    result = true
+                elseif key == "spitter_tame_chocolate_trigger" then
+                    if math.random() < 0.03 then
+                        result = true 
+                    else
+                        game.print({"item-description.biter-tame-chocolate-want-eat-more"})
+                    end
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "behemoth-spitter" then
+                if key == "high_quality_spitter_tame_chocolate_trigger" then
+                    if math.random() < 0.1 then
+                        result = true 
+                    else
+                        game.print({"item-description.biter-tame-chocolate-want-eat-more"})
+                    end
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "small-worm-turret" then
+                if key == "worm_tame_chocolate_trigger" or key == "high_quality_worm_tame_chocolate_trigger" then
+                    result = true
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "medium-worm-turret" then
+                if key == "high_quality_worm_tame_chocolate_trigger" then
+                    result = true
+                elseif key == "worm_tame_chocolate_trigger" then
+                    if math.random() < 0.1 then
+                        result = true 
+                    else
+                        game.print({"item-description.biter-tame-chocolate-want-eat-more"})
+                    end
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "big-worm-turret" then
+                if key == "high_quality_worm_tame_chocolate_trigger" then
+                    result = true
+                elseif key == "worm_tame_chocolate_trigger" then
+                    if math.random() < 0.03 then
+                        result = true 
+                    else
+                        game.print({"item-description.biter-tame-chocolate-want-eat-more"})
+                    end
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "behemoth-worm-turret" then
+                if key == "high_quality_worm_tame_chocolate_trigger" then
+                    if math.random() < 0.1 then
+                        result = true 
+                    else
+                        game.print({"item-description.biter-tame-chocolate-want-eat-more"})
+                    end
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            end
+            -- 一度何かがヒットしたら削除（マルチ集団戦対応はどうしようか）
+            storage.projectile_hits[key] = nil
+        end
+    end
+
+    return result
+end
+
 script.on_event(defines.events.on_entity_damaged, function(event)
     local damaged_entity = event.entity  -- 被弾したエンティティ
     local cause = event.cause
 
-    if cause == nil then
-        -- game.print("[debug] cause == nil")
+    if cause == nil or cause.name ~= "character" then
         return
     end
 
     storage.projectile_hits = storage.projectile_hits or {}
-    for key, value in pairs(storage.projectile_hits) do 
-        -- game.print("[debug] key = " .. key)
-        -- game.print("type(storage.projectile_hits[key]) = " .. type(storage.projectile_hits[key]))
-        if storage.projectile_hits[key][2] == nil then 
-            -- game.print("storage.projectile_hits[key] = " .. storage.projectile_hits[key][1] .. ", nil")
-        else
-            -- game.print("storage.projectile_hits[key] = " .. storage.projectile_hits[key][1] .. ", "  .. storage.projectile_hits[key][2].x .. ", "  .. storage.projectile_hits[key][2].y)
-        end
 
-        -- game.print("game.tick - storage.projectile_hits[key][1] = " .. game.tick - storage.projectile_hits[key][1])
-        -- game.print("length(storage.projectile_hits[key][2], damaged_entity.position) = " .. length(storage.projectile_hits[key][2], damaged_entity.position))
-        if game.tick - storage.projectile_hits[key][1] < 600 and length(storage.projectile_hits[key][2], damaged_entity.position) < 15 then
-            if damaged_entity.name == "small-biter" then
-                game.print("あまりの美味しさにバイターが懐いた!!")
-                local name = damaged_entity.name
-                local surface = damaged_entity.surface
-                local position = damaged_entity.position
-                local force = damaged_entity.force
-                damaged_entity.destroy()
-                local new_entity = surface.create_entity{
-                    name = name,
-                    position = position,
-                    force = "player"
-                }
+    if damaged_entity.name == "character" then
+        return
+    end
 
-            end
-            -- 一度ヒットしたら削除
-            storage.projectile_hits[key] = nil
-        end
+    if damaged_entity.force ~= nil and damaged_entity.force.name == "player" then
+        game.print({"item-description.biter-tame-chocolate-happy", {"entity-name." .. damaged_entity.name}})
+        return
+    end
+
+    if is_tamer_success(damaged_entity) then
+        game.print({"item-description.biter-tame-chocolate-success", {"entity-name."..damaged_entity.name}})
+        local name = damaged_entity.name
+        local surface = damaged_entity.surface
+        local position = damaged_entity.position
+        local force = damaged_entity.force
+        damaged_entity.destroy()
+        local new_entity = surface.create_entity{
+            name = name,
+            position = position,
+            force = "player"
+        }
     end
 end)
