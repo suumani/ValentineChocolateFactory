@@ -5,7 +5,7 @@ require("prototypes.item")
 require("prototypes.fluid")
 require("prototypes.recipe")
 if mods["space-age"] then
-	require("prototypes.recipe")
+	require("prototypes.recipe-space-age")
 end
 
 data:extend({
