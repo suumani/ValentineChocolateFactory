@@ -15,6 +15,7 @@ require("scripts.events.on_entity_damaged")
 local function init()
     
     storage.speed_boosts = storage.speed_boosts or {}  -- プレイヤーごとのスピードバフ管理
+    storage.projectile_hits = storage.projectile_hits or {}
 
 end
 

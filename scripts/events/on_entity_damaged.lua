@@ -16,6 +16,7 @@ script.on_event(defines.events.on_entity_damaged, function(event)
         return
     end
 
+    storage.projectile_hits = storage.projectile_hits or {}
     for key, value in pairs(storage.projectile_hits) do 
         -- game.print("[debug] key = " .. key)
         -- game.print("type(storage.projectile_hits[key]) = " .. type(storage.projectile_hits[key]))
