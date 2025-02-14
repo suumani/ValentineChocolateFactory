@@ -57,14 +57,6 @@ data:extend({
 			{type = "item", name = "explosives", amount = 4},
 			{type = "item", name = "uranium-235", amount = 2},
 			{type = "fluid", name = "sulfuric-acid", amount = 20},
-			{type = "fluid", name = "lava", amount = 50},
-		},
-		surface_conditions = {
-			{
-				property = "pressure",
-				min = 4000,
-				max = 4000
-			}
 		},
 		results = {{type="item", name="heigh_energy_chocolate", amount=1}},
 	}
@@ -119,14 +111,6 @@ data:extend({
 			tertiary = {r = 0.647, g = 0.471, b = 0.396, a = 1.000}, -- #a57865ff
 			quaternary = {r = 1.000, g = 0.395, b = 0.127, a = 1.000}, -- #ff6420ff
 		},
-		surface_conditions =
-		{
-		  {
-			property = "pressure",
-			min = 2000,
-			max = 2000
-		  }
-		},
 	}
 	,
 	-- ----------------------------
@@ -158,14 +142,6 @@ data:extend({
 			secondary = {r = 0.432, g = 0.793, b = 0.386, a = 1.000}, -- #6eca62ff
 			tertiary = {r = 0.647, g = 0.471, b = 0.396, a = 1.000}, -- #a57865ff
 			quaternary = {r = 1.000, g = 0.395, b = 0.127, a = 1.000}, -- #ff6420ff
-		},
-		surface_conditions =
-		{
-		  {
-			property = "pressure",
-			min = 2000,
-			max = 2000
-		  }
 		},
 	}
 	,
@@ -199,14 +175,6 @@ data:extend({
 			secondary = {r = 0.432, g = 0.793, b = 0.386, a = 1.000}, -- #6eca62ff
 			tertiary = {r = 0.647, g = 0.471, b = 0.396, a = 1.000}, -- #a57865ff
 			quaternary = {r = 1.000, g = 0.395, b = 0.127, a = 1.000}, -- #ff6420ff
-		},
-		surface_conditions =
-		{
-		  {
-			property = "pressure",
-			min = 2000,
-			max = 2000
-		  }
 		},
 	}
 	,
@@ -333,14 +301,6 @@ data:extend({
 			tertiary = {r = 0.647, g = 0.471, b = 0.396, a = 1.000}, -- #a57865ff
 			quaternary = {r = 1.000, g = 0.395, b = 0.127, a = 1.000}, -- #ff6420ff
 		},
-		surface_conditions =
-		{
-		  {
-			property = "pressure",
-			min = 2000,
-			max = 2000
-		  }
-		},
 	}
 	,
 	-- ----------------------------
@@ -373,14 +333,6 @@ data:extend({
 			secondary = {r = 0.432, g = 0.793, b = 0.386, a = 1.000}, -- #6eca62ff
 			tertiary = {r = 0.647, g = 0.471, b = 0.396, a = 1.000}, -- #a57865ff
 			quaternary = {r = 1.000, g = 0.395, b = 0.127, a = 1.000}, -- #ff6420ff
-		},
-		surface_conditions =
-		{
-		  {
-			property = "pressure",
-			min = 2000,
-			max = 2000
-		  }
 		},
 	}
 	,
@@ -415,14 +367,6 @@ data:extend({
 			tertiary = {r = 0.647, g = 0.471, b = 0.396, a = 1.000}, -- #a57865ff
 			quaternary = {r = 1.000, g = 0.395, b = 0.127, a = 1.000}, -- #ff6420ff
 		},
-		surface_conditions =
-		{
-		  {
-			property = "pressure",
-			min = 2000,
-			max = 2000
-		  }
-		},
 	}
 	,
 	{
@@ -438,18 +382,8 @@ data:extend({
 			{type = "item", name = "high_quality_stomper_tamer_chocolate", amount = 1},
 			{type = "item", name = "atomic-bomb", amount = 3},
 			{type = "item", name = "bioflux", amount = 4},
-			{type = "fluid", name = "fluorine", amount = 20},
-			{type = "fluid", name = "molten-iron", amount = 20},
 		},
 		results = {{type="item", name="high_quality_demolisher_tamer_chocolate", amount=1}},
-		surface_conditions =
-		{
-		  {
-			property = "pressure",
-			min = 0,
-			max = 0
-		  }
-		},
 	}
 	,
 })

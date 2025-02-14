@@ -23,7 +23,7 @@ local function is_tamer_success(damaged_entity)
                 if key == "high_quality_biter_tame_chocolate_trigger" then
                     result = true
                 elseif key == "biter_tame_chocolate_trigger" then
-                    if math.random() < 0.1 then
+                    if math.random() < 0.3 then
                         result = true 
                     else
                         game.print({"item-description.biter-tame-chocolate-want-eat-more"})
@@ -45,7 +45,7 @@ local function is_tamer_success(damaged_entity)
                 end
             elseif damaged_entity.name == "behemoth-biter" then
                 if key == "high_quality_biter_tame_chocolate_trigger" then
-                    if math.random() < 0.1 then
+                    if math.random() < 0.3 then
                         result = true 
                     else
                         game.print({"item-description.biter-tame-chocolate-want-eat-more"})
@@ -63,7 +63,7 @@ local function is_tamer_success(damaged_entity)
                 if key == "high_quality_spitter_tame_chocolate_trigger" then
                     result = true
                 elseif key == "spitter_tame_chocolate_trigger" then
-                    if math.random() < 0.1 then
+                    if math.random() < 0.3 then
                         result = true 
                     else
                         game.print({"item-description.biter-tame-chocolate-want-eat-more"})
@@ -85,7 +85,7 @@ local function is_tamer_success(damaged_entity)
                 end
             elseif damaged_entity.name == "behemoth-spitter" then
                 if key == "high_quality_spitter_tame_chocolate_trigger" then
-                    if math.random() < 0.1 then
+                    if math.random() < 0.3 then
                         result = true 
                     else
                         game.print({"item-description.biter-tame-chocolate-want-eat-more"})
@@ -103,7 +103,7 @@ local function is_tamer_success(damaged_entity)
                 if key == "high_quality_worm_tame_chocolate_trigger" then
                     result = true
                 elseif key == "worm_tame_chocolate_trigger" then
-                    if math.random() < 0.1 then
+                    if math.random() < 0.3 then
                         result = true 
                     else
                         game.print({"item-description.biter-tame-chocolate-want-eat-more"})
@@ -125,7 +125,7 @@ local function is_tamer_success(damaged_entity)
                 end
             elseif damaged_entity.name == "behemoth-worm-turret" then
                 if key == "high_quality_worm_tame_chocolate_trigger" then
-                    if math.random() < 0.1 then
+                    if math.random() < 0.3 then
                         result = true 
                     else
                         game.print({"item-description.biter-tame-chocolate-want-eat-more"})
