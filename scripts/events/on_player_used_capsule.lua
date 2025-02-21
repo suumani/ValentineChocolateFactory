@@ -17,17 +17,17 @@ script.on_event(defines.events.on_player_used_capsule, function(event)
 
 	-- 効果自分系
 	if item_name == "milk_chocolate" then
-		game.print("Delicious! I want more! 美味しい！もっと食べたい！")
+		game.print({"item-description.eat-milk_chocolate"})
 	elseif item_name == "dark_chocolate" then
-		game.print("Delicious! I want more! 美味しい！もっと食べたい！")
+		game.print({"item-description.eat-dark_chocolate"})
 	elseif item_name == "white_chocolate" then
-		game.print("Delicious! I want more! 美味しい！もっと食べたい！")
+		game.print({"item-description.eat-white_chocolate"})
 	elseif item_name == "caramel_chocolate" then
-		game.print("Delicious! I want more! 美味しい！もっと食べたい！")
+		game.print({"item-description.eat-caramel_chocolate"})
 	elseif item_name == "nut_chocolate" then
-		game.print("Delicious! I want more! 美味しい！もっと食べたい！")
+		game.print({"item-description.eat-nut_chocolate"})
 	elseif item_name == "speed_chocolate" then
-		game.print("I feel like I got faster from how delicious it was.美味しさのあまり30秒間足が速くなった気がする")
+		game.print({"item-description.eat-speed_chocolate"})
         local current_speed = player.character_running_speed_modifier
 
         -- 上限チェック（0.5を超えないようにする）
@@ -43,15 +43,15 @@ script.on_event(defines.events.on_player_used_capsule, function(event)
         end
 
 	elseif item_name == "night_vision_chocolate" then
-		game.print("I feel like I can see better at night from how delicious it was.美味しさのあまり夜目が利くようになった気がする")
+		game.print({"item-description.eat-night_vision_chocolate"})
 	elseif item_name == "yumako_chocolate" then
-		game.print("Delicious! I want more! 美味しい！もっと食べたい！")
+		game.print({"item-description.eat-yumako_chocolate"})
 	elseif item_name == "jelly_chocolate" then
-		game.print("Delicious! I want more! 美味しい！もっと食べたい！")
+		game.print({"item-description.eat-jelly_chocolate"})
 	elseif item_name == "heigh_energy_chocolate" then
-		game.print("Why did I eat this...? なんでこんなの食べちゃったんだ・・・")
+		game.print({"item-description.eat-heigh_energy_chocolate"})
 	elseif item_name == "ore_chocolate" then
-		game.print("Why did I eat this...? なんでこんなの食べちゃったんだ・・・")
+		game.print({"item-description.eat-ore_chocolate"})
 	elseif item_name:find("chocolate") then
 		game.print("Chocolate for you! チョコあげる！")
 	end

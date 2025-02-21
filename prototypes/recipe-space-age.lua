@@ -18,7 +18,7 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-v[yumako_chocolate]",
+		order = "s[suumani]-v[valentine]-1180[yumako_chocolate]",
 	}
 	,
 	-- ----------------------------
@@ -39,7 +39,7 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-v[jelly_chocolate]",
+		order = "s[suumani]-v[valentine]-1190[jelly_chocolate]",
 	}
 	,
 	-- ----------------------------
@@ -59,6 +59,7 @@ data:extend({
 			{type = "fluid", name = "sulfuric-acid", amount = 20},
 		},
 		results = {{type="item", name="heigh_energy_chocolate", amount=1}},
+		order = "s[suumani]-v[valentine]-1200[heigh_energy_chocolate]",
 	}
 	,
 	-- ----------------------------
@@ -79,10 +80,11 @@ data:extend({
 			{type = "fluid", name = "lava", amount = 50},
 		},
 		results = {{type="item", name="ore_chocolate", amount=1}},
+		order = "s[suumani]-v[valentine]-1210[ore_chocolate]",
 	}
 	,
 	-- ----------------------------
-	-- リグラーチョコ（Storafer Tamer Chocolate）
+	-- リグラーチョコ（wriggler Tamer Chocolate）
 	-- ----------------------------
 	{
 		type = "recipe",
@@ -102,8 +104,7 @@ data:extend({
 			{type = "item", name = "wriggler_tamer_chocolate", amount = 10}
 		},
 		allow_productivity = true,
-		subgroup = "fluid-recipes",
-		order = "c[oil-products]-z[wriggler_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1250[wriggler_tamer_chocolate]",
 		crafting_machine_tint =
 		{
 			primary = {r = 0.268, g = 0.723, b = 0.223, a = 1.000}, -- #44b838ff
@@ -114,11 +115,11 @@ data:extend({
 	}
 	,
 	-- ----------------------------
-	-- ストレイファーチョコ（Storafer Tamer Chocolate）
+	-- ストレイファーチョコ（strafer Tamer Chocolate）
 	-- ----------------------------
 	{
 		type = "recipe",
-		name = "storafer_tamer_chocolate",
+		name = "strafer_tamer_chocolate",
 		category = "organic",
 		enabled = true,
 		energy_required = 12,
@@ -131,11 +132,10 @@ data:extend({
 		},
 		results =
 		{
-			{type = "item", name = "storafer_tamer_chocolate", amount = 10}
+			{type = "item", name = "strafer_tamer_chocolate", amount = 10}
 		},
 		allow_productivity = true,
-		subgroup = "fluid-recipes",
-		order = "c[oil-products]-z[storafer_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1260[strafer_tamer_chocolate]",
 		crafting_machine_tint =
 		{
 			primary = {r = 0.268, g = 0.723, b = 0.223, a = 1.000}, -- #44b838ff
@@ -146,29 +146,28 @@ data:extend({
 	}
 	,
 	-- ----------------------------
-	-- ストンパーチョコ（Worm Tamer Chocolate）
+	-- ストンパーチョコ（Stomper Tamer Chocolate）
 	-- ----------------------------
 	{
 		type = "recipe",
-		name = "storafer_tamer_chocolate",
+		name = "stomper_tamer_chocolate",
 		category = "organic",
 		enabled = true,
 		energy_required = 12,
 		ingredients =
 		{
 			{type = "item", name = "wriggler_tamer_chocolate", amount = 2},
-			{type = "item", name = "storafer_tamer_chocolate", amount = 2},
+			{type = "item", name = "strafer_tamer_chocolate", amount = 2},
 			{type = "item", name = "tree-seed", amount = 5},
 			{type = "fluid", name = "water", amount = 10},
 			{type = "fluid", name = "vanilla_essence", amount = 10}
 		},
 		results =
 		{
-			{type = "item", name = "storafer_tamer_chocolate", amount = 10}
+			{type = "item", name = "stomper_tamer_chocolate", amount = 10}
 		},
 		allow_productivity = true,
-		subgroup = "fluid-recipes",
-		order = "c[oil-products]-z[storafer_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1270[stomper_tamer_chocolate]",
 		crafting_machine_tint =
 		{
 			primary = {r = 0.268, g = 0.723, b = 0.223, a = 1.000}, -- #44b838ff
@@ -195,10 +194,10 @@ data:extend({
 			{type = "item", name = "ore_chocolate", amount = 1},
 			{type = "item", name = "atomic-bomb", amount = 1},
 			{type = "fluid", name = "sulfuric-acid", amount = 20},
-			{type = "fluid", name = "steam", amount = 100},
 			{type = "fluid", name = "lava", amount = 50},
 		},
 		results = {{type="item", name="demolisher_tamer_chocolate", amount=1}},
+		order = "s[suumani]-v[valentine]-1280[demolisher_tamer_chocolate]",
 	}
 	,
 	-- ----------------------------
@@ -221,7 +220,7 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-v[high_quality_biter_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1290[high_quality_biter_tamer_chocolate]",
 	}
 	,
 	-- ----------------------------
@@ -235,6 +234,7 @@ data:extend({
 		energy_required = 12,
 		ingredients = {
 			{type = "item", name = "spitter_tamer_chocolate", amount = 1},
+			{type = "item", name = "jelly_chocolate", amount = 2},
 			{type = "item", name = "biter-egg", amount = 1},
 			{type = "fluid", name = "steam", amount = 10},
 		},
@@ -243,7 +243,7 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-v[high_quality_spitter_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1300[high_quality_spitter_tamer_chocolate]",
 	}
 	,
 	-- ----------------------------
@@ -267,11 +267,11 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-v[high_quality_worm_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1310[high_quality_worm_tamer_chocolate]",
 	}
 	,
 	-- ----------------------------
-	-- 上級リグラーチョコ（Storafer Tamer Chocolate）
+	-- 上級リグラーチョコ（wriggler Tamer Chocolate）
 	-- ----------------------------
 	{
 		type = "recipe",
@@ -292,8 +292,7 @@ data:extend({
 			{type = "item", name = "high_quality_wriggler_tamer_chocolate", amount = 10}
 		},
 		allow_productivity = true,
-		subgroup = "fluid-recipes",
-		order = "c[oil-products]-z[high_quality_wriggler_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1320[high_quality_wriggler_tamer_chocolate]",
 		crafting_machine_tint =
 		{
 			primary = {r = 0.268, g = 0.723, b = 0.223, a = 1.000}, -- #44b838ff
@@ -304,17 +303,17 @@ data:extend({
 	}
 	,
 	-- ----------------------------
-	-- 上級ストレイファーチョコ（Storafer Tamer Chocolate）
+	-- 上級ストレイファーチョコ（strafer Tamer Chocolate）
 	-- ----------------------------
 	{
 		type = "recipe",
-		name = "high_quality_storafer_tamer_chocolate",
+		name = "high_quality_strafer_tamer_chocolate",
 		category = "organic",
 		enabled = true,
 		energy_required = 12,
 		ingredients =
 		{
-			{type = "item", name = "jelly_chocolate", amount = 10},
+			{type = "item", name = "strafer_tamer_chocolate", amount = 2},
 			{type = "item", name = "pentapod-egg", amount = 1},
 			{type = "item", name = "synthetic_sugar_production", amount = 1},
 			{type = "fluid", name = "water", amount = 10},
@@ -322,11 +321,10 @@ data:extend({
 		},
 		results =
 		{
-			{type = "item", name = "high_quality_storafer_tamer_chocolate", amount = 10}
+			{type = "item", name = "high_quality_strafer_tamer_chocolate", amount = 10}
 		},
 		allow_productivity = true,
-		subgroup = "fluid-recipes",
-		order = "c[oil-products]-z[high_quality_storafer_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1330[high_quality_strafer_tamer_chocolate]",
 		crafting_machine_tint =
 		{
 			primary = {r = 0.268, g = 0.723, b = 0.223, a = 1.000}, -- #44b838ff
@@ -341,13 +339,14 @@ data:extend({
 	-- ----------------------------
 	{
 		type = "recipe",
-		name = "high_quality_storafer_tamer_chocolate",
+		name = "high_quality_stomper_tamer_chocolate",
 		category = "organic",
 		enabled = true,
 		energy_required = 12,
 		ingredients =
 		{
-			{type = "item", name = "storafer_tamer_chocolate", amount = 10},
+			{type = "item", name = "wriggler_tamer_chocolate", amount = 2},
+			{type = "item", name = "strafer_tamer_chocolate", amount = 2},
 			{type = "item", name = "pentapod-egg", amount = 1},
 			{type = "item", name = "synthetic_sugar_production", amount = 1},
 			{type = "fluid", name = "water", amount = 10},
@@ -355,11 +354,10 @@ data:extend({
 		},
 		results =
 		{
-			{type = "item", name = "high_quality_storafer_tamer_chocolate", amount = 10}
+			{type = "item", name = "high_quality_stomper_tamer_chocolate", amount = 10}
 		},
 		allow_productivity = true,
-		subgroup = "fluid-recipes",
-		order = "c[oil-products]-z[high_quality_storafer_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1340[high_quality_stomper_tamer_chocolate]",
 		crafting_machine_tint =
 		{
 			primary = {r = 0.268, g = 0.723, b = 0.223, a = 1.000}, -- #44b838ff
@@ -369,6 +367,9 @@ data:extend({
 		},
 	}
 	,
+	-- ----------------------------
+	-- 上級デモリッシャーチョコ（Demolisher Tamer Chocolate）
+	-- ----------------------------
 	{
 		type = "recipe",
 		name = "high_quality_demolisher_tamer_chocolate",

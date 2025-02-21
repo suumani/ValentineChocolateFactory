@@ -42,7 +42,7 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-c[calcium_hydroxide]",
+		order = "s[suumani]-v[valentine]-1030[calcium_hydroxide]",
 	}
 	,
 	-- ----------------------------
@@ -63,7 +63,7 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-c[synthetic_sugar_production]",
+		order = "s[suumani]-v[valentine]-1040[synthetic_sugar_production]",
 	}
 	,
 	-- ----------------------------
@@ -84,7 +84,7 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-s[sugar_nats]",
+		order = "s[suumani]-v[valentine]-1050[sugar_nats]",
 	}
 	,
 	-- ----------------------------
@@ -128,7 +128,7 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-v[milk_chocolate]",
+		order = "s[suumani]-v[valentine]-1110[milk_chocolate]",
 	}
 	,
 	-- ----------------------------
@@ -151,7 +151,7 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-v[dark_chocolate]",
+		order = "s[suumani]-v[valentine]-1120[dark_chocolate]",
 	}
 	,
 	-- ----------------------------
@@ -174,7 +174,7 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-v[milk_chocolate]",
+		order = "s[suumani]-v[valentine]-1130[white_chocolate]",
 	}
 	,
 	-- ----------------------------
@@ -197,7 +197,7 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-v[caramel_chocolate]",
+		order = "s[suumani]-v[valentine]-1140[caramel_chocolate]",
 	}
 	,
 	-- ----------------------------
@@ -220,7 +220,7 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-v[nut_chocolate]",
+		order = "s[suumani]-v[valentine]-1150[nut_chocolate]",
 	}
 	,
 	-- ----------------------------
@@ -242,7 +242,7 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-v[speed_chocolate]",
+		order = "s[suumani]-v[valentine]-1160[speed_chocolate]",
 	}
 	,
 	-- ----------------------------
@@ -264,7 +264,7 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-v[night_vision_chocolate]",
+		order = "s[suumani]-v[valentine]-1170[night_vision_chocolate]",
 	}
 	,
 	-- ----------------------------
@@ -286,7 +286,7 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-v[biter_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1220[biter_tamer_chocolate]",
 	}
 	,
 	-- ----------------------------
@@ -308,7 +308,7 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-v[spitter_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1230[spitter_tamer_chocolate]",
 	}
 	,
 	-- ----------------------------
@@ -332,7 +332,7 @@ data:extend({
 		},
 		energy_required = 5,
 		allow_productivity = true,
-		order = "s[suumani]-v[valentine]-v[worm_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1240[worm_tamer_chocolate]",
 	}
 	,
 })

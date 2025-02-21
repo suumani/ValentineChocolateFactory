@@ -10,7 +10,7 @@ end
 local function is_tamer_success(damaged_entity)
 
     local result = false
-
+    
     for key, value in pairs(storage.projectile_hits) do 
         if game.tick - storage.projectile_hits[key][1] < 600 and length(storage.projectile_hits[key][2], damaged_entity.position) < 15 then
             if damaged_entity.name == "small-biter" then
@@ -133,6 +133,126 @@ local function is_tamer_success(damaged_entity)
                 else
                     game.print({"item-description.biter-tame-chocolate-failed"})
                 end
+            elseif damaged_entity.name == "small-wriggler-pentapod" then
+                if key == "wriggler_tame_chocolate_trigger" or key == "high_quality_wriggler_tame_chocolate_trigger" then
+                    result = true
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "medium-wriggler-pentapod" then
+                if key == "high_quality_wriggler_tame_chocolate_trigger" then
+                    result = true
+                elseif key == "wriggler_tame_chocolate_trigger" then
+                    if math.random() < 0.3 then
+                        result = true 
+                    else
+                        game.print({"item-description.biter-tame-chocolate-want-eat-more"})
+                    end
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "big-wriggler-pentapod" then
+                if key == "high_quality_wriggler_tame_chocolate_trigger" then
+                    result = true
+                elseif key == "wriggler_tame_chocolate_trigger" then
+                    if math.random() < 0.03 then
+                        result = true 
+                    else
+                        game.print({"item-description.biter-tame-chocolate-want-eat-more"})
+                    end
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "small-strafer-pentapod" then
+                if key == "strafer_tame_chocolate_trigger" or key == "high_quality_strafer_tame_chocolate_trigger" then
+                    result = true
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "medium-strafer-pentapod" then
+                if key == "high_quality_strafer_tame_chocolate_trigger" then
+                    result = true
+                elseif key == "strafer_tame_chocolate_trigger" then
+                    if math.random() < 0.3 then
+                        result = true 
+                    else
+                        game.print({"item-description.biter-tame-chocolate-want-eat-more"})
+                    end
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "big-strafer-pentapod" then
+                if key == "high_quality_strafer_tame_chocolate_trigger" then
+                    result = true
+                elseif key == "strafer_tame_chocolate_trigger" then
+                    if math.random() < 0.03 then
+                        result = true 
+                    else
+                        game.print({"item-description.biter-tame-chocolate-want-eat-more"})
+                    end
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "small-stomper-pentapod" then
+                if key == "stomper_tame_chocolate_trigger" or key == "high_quality_stomper_tame_chocolate_trigger" then
+                    result = true
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "medium-stomper-pentapod" then
+                if key == "high_quality_stomper_tame_chocolate_trigger" then
+                    result = true
+                elseif key == "stomper_tame_chocolate_trigger" then
+                    if math.random() < 0.3 then
+                        result = true 
+                    else
+                        game.print({"item-description.biter-tame-chocolate-want-eat-more"})
+                    end
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "big-stomper-pentapod" then
+                if key == "high_quality_stomper_tame_chocolate_trigger" then
+                    result = true
+                elseif key == "stomper_tame_chocolate_trigger" then
+                    if math.random() < 0.03 then
+                        result = true 
+                    else
+                        game.print({"item-description.biter-tame-chocolate-want-eat-more"})
+                    end
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "small-demolisher" then
+                if key == "demolisher_tame_chocolate_trigger" or key == "high_quality_demolisher_tame_chocolate_trigger" then
+                    result = true
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "medium-demolisher" then
+                if key == "high_quality_demolisher_tame_chocolate_trigger" then
+                    result = true
+                elseif key == "demolisher_tame_chocolate_trigger" then
+                    if math.random() < 0.3 then
+                        result = true 
+                    else
+                        game.print({"item-description.biter-tame-chocolate-want-eat-more"})
+                    end
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
+            elseif damaged_entity.name == "big-demolisher" then
+                if key == "high_quality_demolisher_tame_chocolate_trigger" then
+                    result = true
+                elseif key == "demolisher_tame_chocolate_trigger" then
+                    if math.random() < 0.03 then
+                        result = true 
+                    else
+                        game.print({"item-description.biter-tame-chocolate-want-eat-more"})
+                    end
+                else
+                    game.print({"item-description.biter-tame-chocolate-failed"})
+                end
             end
             -- 一度何かがヒットしたら削除（マルチ集団戦対応はどうしようか）
             storage.projectile_hits[key] = nil
@@ -156,9 +276,15 @@ script.on_event(defines.events.on_entity_damaged, function(event)
         return
     end
 
-    if damaged_entity.force ~= nil and damaged_entity.force.name == "player" then
-        game.print({"item-description.biter-tame-chocolate-happy", {"entity-name." .. damaged_entity.name}})
-        return
+    if damaged_entity.force ~= nil and damaged_entity.force.name == "player" then 
+        if damaged_entity.name:find("biter") or
+            damaged_entity.name:find("spitter") or
+            damaged_entity.name:find("worm") or
+            damaged_entity.name:find("pentapod") or
+            damaged_entity.name:find("demolisher") then
+            game.print({"item-description.biter-tame-chocolate-happy", {"entity-name." .. damaged_entity.name}})
+            return
+        end
     end
 
     if is_tamer_success(damaged_entity) then
