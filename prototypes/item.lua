@@ -10,7 +10,7 @@ data:extend({
 	{
 	  type = "item",
 	  name = "calcium_hydroxide",
-	  icon = "__ValentineChocolateFactory__/graphics/icons/calcium_hydroxide.png",
+	  icon = "__ValentineChocolateFactory__/graphics/icons/calcium_hydroxide_with_label.png",
 	  icon_size = 128,
 	  fuel_value = "2MJ",
 	  fuel_category = "chemical",
@@ -26,7 +26,7 @@ data:extend({
 	{
 	  type = "item",
 	  name = "synthetic_sugar_production", -- 人工糖類 (synthetic sugar production)
-	  icon = "__ValentineChocolateFactory__/graphics/icons/synthetic_sugar_production.png",
+	  icon = "__ValentineChocolateFactory__/graphics/icons/synthetic_sugar_production_with_label.png",
 	  icon_size = 128,
 	  fuel_value = "2MJ",
 	  fuel_category = "chemical",
@@ -640,7 +640,7 @@ data:extend({
 	}
 	,
 	-- ----------------------------
-	-- リグラーチョコ（Storafer Tamer Chocolate）
+	-- リグラーチョコ（Wriggler Tamer Chocolate）
 	-- ----------------------------
 	{
 		type = "capsule",
@@ -671,7 +671,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "biter_tamer_chocolate-projectile",
+						  projectile = "wriggler_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -700,17 +700,17 @@ data:extend({
 	}
 	,
 	-- ----------------------------
-	-- ストレイファーチョコ（Storafer Tamer Chocolate）
+	-- ストレイファーチョコ（strafer Tamer Chocolate）
 	-- ----------------------------
 	{
 		type = "capsule",
-		name = "storafer_tamer_chocolate", 
-		localised_name = {"item-name.storafer_tamer_chocolate"},
-		localised_description = {"item-description.storafer_tamer_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/1260_storafer_tamer_chocolate.png",
+		name = "strafer_tamer_chocolate", 
+		localised_name = {"item-name.strafer_tamer_chocolate"},
+		localised_description = {"item-description.strafer_tamer_chocolate"},
+		icon = "__ValentineChocolateFactory__/graphics/icons/1260_strafer_tamer_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "s[suumani]-v[valentine]-1260[storafer_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1260[strafer_tamer_chocolate]",
 		stack_size = 100,
 		weight = 1000,
 
@@ -731,7 +731,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "biter_tamer_chocolate-projectile",
+						  projectile = "strafer_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -791,7 +791,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "biter_tamer_chocolate-projectile",
+						  projectile = "stomper_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -851,7 +851,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "biter_tamer_chocolate-projectile",
+						  projectile = "demolisher_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -1091,7 +1091,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "biter_tamer_chocolate-projectile",
+						  projectile = "high_quality_wriggler_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -1124,13 +1124,13 @@ data:extend({
 	-- ----------------------------
 	{
 		type = "capsule",
-		name = "high_quality_storafer_tamer_chocolate", 
-		localised_name = {"item-name.high_quality_storafer_tamer_chocolate"},
-		localised_description = {"item-description.high_quality_storafer_tamer_chocolate"},
-		icon = "__ValentineChocolateFactory__/graphics/icons/1330_high_quality_storafer_tamer_chocolate.png",
+		name = "high_quality_strafer_tamer_chocolate", 
+		localised_name = {"item-name.high_quality_strafer_tamer_chocolate"},
+		localised_description = {"item-description.high_quality_strafer_tamer_chocolate"},
+		icon = "__ValentineChocolateFactory__/graphics/icons/1330_high_quality_strafer_tamer_chocolate.png",
 		icon_size = 128,
 		subgroup = "capsule",
-		order = "s[suumani]-v[valentine]-1330[high_quality_storafer_tamer_chocolate]",
+		order = "s[suumani]-v[valentine]-1330[high_quality_strafer_tamer_chocolate]",
 		stack_size = 100,
 		weight = 1000,
 
@@ -1151,7 +1151,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "biter_tamer_chocolate-projectile",
+						  projectile = "high_quality_strafer_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -1211,7 +1211,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "biter_tamer_chocolate-projectile",
+						  projectile = "high_quality_stomper_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
@@ -1271,7 +1271,7 @@ data:extend({
 						action_delivery =
 						{
 						  type = "projectile",
-						  projectile = "biter_tamer_chocolate-projectile",
+						  projectile = "high_quality_demolisher_tamer_chocolate-projectile",
 						  starting_speed = 0.3
 						}
 					  },
